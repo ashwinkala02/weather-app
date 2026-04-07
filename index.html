@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <h2 class="logo">Weather App</h2>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cities.html">Cities</a></li>
+        <li><a href="favorite.html">Favorites</a></li>
+      </ul>
+    </nav>
+
+    <!-- Search Section -->
+
+    <section class="search-section">
+      <input type="text" id="cityInput" placeholder="Search city" />
+
+      <button onclick="getWeather()">Search</button>
+
+      <br /><br />
+
+      <button onclick="getLocationWeather()" class="location-btn">
+        Current Location
+      </button>
+    </section>
+
+    <!-- Weather Dashboard -->
+
+    <section class="weather-dashboard">
+      <!-- Left Weather Panel -->
+
+      <div class="weather-left">
+        <h2 id="cityName">City Name</h2>
+
+        <!-- Current Weather Icon -->
+        <img id="weatherIcon" alt="weather icon" width="90" />
+
+        <h1 id="temperature">--°C</h1>
+
+        <p id="condition">Weather Condition</p>
+      </div>
+
+      <!-- Right Highlights Panel -->
+
+      <div class="weather-right">
+        <h2>Today's Highlights</h2>
+
+        <div class="highlight-container">
+          <div class="highlight-card">
+            <h3>Wind</h3>
+            <p id="windHighlight">--</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Humidity</h3>
+            <p id="humidityHighlight">--</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Visibility</h3>
+            <p id="visibility">--</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Pressure</h3>
+            <p id="pressureHighlight">--</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Sunrise</h3>
+            <p id="sunrise">--</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Sunset</h3>
+            <p id="sunset">--</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Day Forecast -->
+
+    <h2 class="forecast-title">5 Day Forecast</h2>
+
+    <section class="forecast-container">
+      <div class="forecast-card">
+        <p id="day1">Day</p>
+        <img id="icon1" alt="weather icon" width="55" />
+        <p id="temp1">--°C</p>
+      </div>
+
+      <div class="forecast-card">
+        <p id="day2">Day</p>
+        <img id="icon2" alt="weather icon" width="55" />
+        <p id="temp2">--°C</p>
+      </div>
+
+      <div class="forecast-card">
+        <p id="day3">Day</p>
+        <img id="icon3" alt="weather icon" width="55" />
+        <p id="temp3">--°C</p>
+      </div>
+
+      <div class="forecast-card">
+        <p id="day4">Day</p>
+        <img id="icon4" alt="weather icon" width="55" />
+        <p id="temp4">--°C</p>
+      </div>
+
+      <div class="forecast-card">
+        <p id="day5">Day</p>
+        <img id="icon5" alt="weather icon" width="55" />
+        <p id="temp5">--°C</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

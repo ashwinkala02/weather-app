@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Favorite Cities</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h2 class="logo">Weather App</h2>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cities.html">Cities</a></li>
+        <li><a href="favorite.html">Favorites</a></li>
+      </ul>
+    </nav>
+
+    <div class="favorites-container">
+      <h2>Favorites</h2>
+
+      <!-- Launch Location -->
+
+      <h3>Launch Location</h3>
+
+      <div class="fav-card">
+        <div class="fav-left">
+          <h4 id="launchCity">Loading...</h4>
+
+          <h1 id="launchTemp">--°C</h1>
+
+          <p id="launchCond">--</p>
+        </div>
+
+        <div class="fav-right">
+          <p id="launchRange">--</p>
+
+          <p id="launchWind">--</p>
+
+          <p id="launchHumidity">--</p>
+        </div>
+      </div>
+
+      <!-- Favourite Places -->
+
+      <h3>Favourite Places</h3>
+
+      <div class="fav-grid" id="favGrid">
+        <div class="fav-add" onclick="addFavorite()">+</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
