@@ -6,12 +6,17 @@ A modern and responsive **Weather Application** built using **HTML, CSS, and Jav
 
 📌 Features
 
-*✔️ Search weather by city name
-*✔️ Get weather using current location (Geolocation)
-*✔️ 5-day weather forecast
-*✔️ Popular cities weather dashboard
-*✔️ Add and view favorite cities (LocalStorage)
-*✔️ Clean and responsive UI
+✔️ Search weather by city name
+
+✔️ Get weather using current location (Geolocation)
+
+✔️ 5-day weather forecast
+
+✔️ Popular cities weather dashboard
+
+✔️ Add and view favorite cities (LocalStorage)
+
+✔️ Clean and responsive UI
 
 ---
 
